@@ -10,8 +10,8 @@ const getRandomAdvice = async () => {
         adviceTextHolder.textContent = adviceJson.slip.advice;
 }
 
-// Populate targeted fields with the response from the API call on page load
-window.onload = getRandomAdvice; 
+// Populate targeted fields with the response from the API call on page load/refresh
+getRandomAdvice(); 
 
 // Populate targeted fields with the response from the API call on button click
 rndmBtn.addEventListener('click', getRandomAdvice);
